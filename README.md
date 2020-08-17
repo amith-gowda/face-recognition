@@ -36,9 +36,9 @@ Optional Components to simulate the Automobile functions like door unlock and ig
 
  ### How To Run
 
- - For the initial setup, create a user and a dataset by running the **[face-datasets.py](facedatasets.py)** program. This Captures a series of images and converts to grayscale. Then it uses the HAAR Cascade filter to return the coordinates of the position of the face in the frame.
- - Run the **[training.py](training.py)** program which applies the LBPH Algorithm to generate the Histogram data of the image as a **[trainer.yml](trainer/trainer.yml)** file and also assigns a user ID to that particular face. (Note: Each face should only have one unique user ID)
- - Run the **[face_recognition.py](face_recognition.py)**  program which takes in test images from a live feed of the camera. If a face is detected using the same HAAR Cascade filter, it again generates histogram data for the test image using LBPH Algorithm. The test data and the trained data are used to calculate the 'confidence' value using Euclidean distance which lets us figure out if both the images are a match. Refer sources for more information.
+ - For the initial setup, create a user and a dataset by running the **[face-datasets.py](https://github.com/amith-gowda/face-recognition/blob/master/face_datasets.py)** program. This Captures a series of images and converts to grayscale. Then it uses the HAAR Cascade filter to return the coordinates of the position of the face in the frame.
+ - Run the **[training.py](https://github.com/amith-gowda/face-recognition/blob/master/training.py)** program which applies the LBPH Algorithm to generate the Histogram data of the image as a **[trainer.yml](https://github.com/amith-gowda/face-recognition/blob/master/trainer/trainer.yml)** file and also assigns a user ID to that particular face. (Note: Each face should only have one unique user ID)
+ - Run the **[face_recognition.py](https://github.com/amith-gowda/face-recognition/blob/master/face_recognition.py)**  program which takes in test images from a live feed of the camera. If a face is detected using the same HAAR Cascade filter, it again generates histogram data for the test image using LBPH Algorithm. The test data and the trained data are used to calculate the 'confidence' value using Euclidean distance which lets us figure out if both the images are a match. Refer sources for more information.
 
  ---
 
